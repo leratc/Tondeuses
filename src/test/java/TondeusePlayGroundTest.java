@@ -7,7 +7,7 @@ public class TondeusePlayGroundTest {
     @Test
     @DisplayName("Test tickCoord_fromN()")
     public void test_tickCoord_fromN() {
-        String fileName = "test/resources/tondeusesScript.txt";
+        String fileName = "src/test/resources/tondeusesScript.txt";
         TondeusePlayGround tondeusePlayGround = TondeusePlayGround.buildPlayGroundFromResourceFile(fileName);
         assertThat(tondeusePlayGround.getMapTondeuses().size()).isEqualTo(2);
         assertThat(tondeusePlayGround.getMapTondeuses().get(1).getCoord().getX()).isEqualTo(1);
